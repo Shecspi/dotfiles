@@ -65,4 +65,7 @@ history = 10000
 [window]
 opacity = 1.0
 padding = { x = 0 }
+decorations = "None"
 
+[cursor]
+style = { 'shape' = 'Beam', 'blinking' = 'Off' }
