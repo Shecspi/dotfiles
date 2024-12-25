@@ -1,0 +1,7 @@
+[user]
+	email = shecspi@yandex.ru
+	name = Shecspi
+[core]
+	autocrlf = input
+[alias]
+	loga = log --all --oneline --graph
