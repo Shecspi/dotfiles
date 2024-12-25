@@ -5,3 +5,4 @@
 	autocrlf = input
 [alias]
 	loga = log --all --oneline --graph
+	st = status
