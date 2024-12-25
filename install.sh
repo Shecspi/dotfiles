@@ -3,7 +3,10 @@
 # ################################
 
 sudo pacman -Syu
-sudo pacman -S --needed base-devel btop zellij alacritty bat ctop dbeaver docker eza git neovim obsidian pass postgresql ripgrep syncthing telegram-desktop ttf-jetbrains-mono-nerd wget zsh yay
+sudo pacman -S --needed base-devel btop zellij alacritty bat ctop dbeaver docker eza git neovim obsidian pass postgresql ripgrep syncthing telegram-desktop ttf-jetbrains-mono-nerd wget zsh yay \
+  # Шрифты для отображения Unicode-символов в консоли (для btop, nvim и т.д.)
+  noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra \
+  gnome-tweaks
 
 #############################
 # Установка и настройка Yay #
@@ -12,9 +15,11 @@ sudo pacman -S --needed base-devel btop zellij alacritty bat ctop dbeaver docker
 mkdir -p ~/.tmp
 git clone https://aur.archlinux.org/yay.git
 cd ./yay
-#makepkg -si
+makepkg -si
 cd ~
 rm -rf ~/.tmp/yay
+
+yay -S ttf-jetbrains-mono-nerd pycharm-professional yandex-browser
 
 #################
 # Настройка ZSH #
@@ -38,4 +43,4 @@ source ~/.zshrc
 
 
 # Конфигурация alacritty
-#ln -s $PWD/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -s $PWD/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
