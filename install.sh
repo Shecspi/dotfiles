@@ -3,10 +3,13 @@
 # ################################
 
 sudo pacman -Syu
-sudo pacman -S --needed base-devel btop zellij alacritty bat ctop dbeaver docker eza git neovim obsidian pass postgresql ripgrep syncthing telegram-desktop ttf-jetbrains-mono-nerd wget zsh yay \
-  # Шрифты для отображения Unicode-символов в консоли (для btop, nvim и т.д.)
-  noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra \
-  gnome-tweaks
+sudo pacman -S --needed \
+  base-devel postgresql docker git neovim pass \
+  btop zellij alacritty bat ctop eza zsh obsidian \
+  pass ripgrep yay \
+  noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-jetbrains-mono-nerd \
+  gnome-tweaks \
+  syncthing telegram-desktop dbeaver obsidian
 
 #############################
 # Установка и настройка Yay #
